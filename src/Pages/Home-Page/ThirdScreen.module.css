@@ -1,0 +1,123 @@
+.container {
+  background-color: #f2f6f5;
+  padding: 4rem;
+  display: grid;
+  grid-template-columns: [line1] 1fr [line2] 1fr [line3] 1fr;
+  gap: 10px;
+  height: 38rem;
+}
+.mealHeader {
+  color: #1d4239;
+}
+.mealTime {
+  color: lightslategray;
+}
+.mealIntro {
+  color: #2f6558;
+  font-size: 18px;
+}
+.mealImg {
+  text-align: center;
+}
+.mealImg img {
+  width: 25rem;
+  border-radius: 25px;
+}
+.mealsContainer {
+  line-height: 4rem;
+  text-align: center;
+  position: relative;
+  grid-column: 3;
+  flex-direction: column;
+  margin-left: 2rem;
+}
+.mealSwitch {
+  color: lightslategray;
+  cursor: pointer;
+  border-left: 2px solid lightslategray;
+  text-align: left;
+  padding-left: 2rem;
+  font-size: 24px;
+  width: fit-content;
+}
+.mealSwitchActive {
+  color: #1d4239 !important;
+  border-left: 2px solid #2f6558 !important;
+}
+
+/*Mobile Screen*/
+
+@media (max-width: 599px) {
+  .container {
+    background-color: #f2f6f5;
+    display: grid;
+    grid-template-rows: [line1]0.5fr [line2] 1fr [line3] 1fr;
+    grid-template-areas:
+      "item1"
+      "item2"
+      "item3";
+    height: fit-content;
+    grid-template-columns: none;
+    padding: 1rem;
+  }
+  .mealImg {
+    grid-area: item3;
+  }
+  .mealImg img {
+    width: 18rem;
+    border-radius: 25px;
+  }
+  .mealsContainer {
+    line-height: 4rem;
+    text-align: center;
+    position: relative;
+    grid-column: 3;
+    flex-direction: column;
+    margin-left: 2rem;
+    grid-area: item1;
+  }
+  .mealInfo {
+    grid-area: item2;
+  }
+}
+/*Tablet Screen*/
+
+@media (min-width: 600px) and (max-width: 768px) {
+  .container {
+    background-color: #f2f6f5;
+    display: grid;
+    grid-template-rows: [line1]1fr [line2] 2fr [line3] 1fr;
+    grid-template-areas:
+      "item1"
+      "item2"
+      "item3";
+    height: 110rem;
+    grid-template-columns: none;
+    padding: 1rem;
+  }
+  .mealImg {
+    grid-area: item3;
+  }
+  .mealImg img {
+    width: 100%;
+  }
+  .mealsContainer {
+    line-height: 4rem;
+    text-align: center;
+    position: relative;
+    grid-column: 3;
+    flex-direction: column;
+    margin-left: 2rem;
+    grid-area: item1;
+  }
+  .mealInfo {
+    grid-area: item2;
+  }
+}
+/*Small Laptop Screen*/
+@media (min-width: 769px) and (max-width: 1025px) {
+  .mealImg img {
+    width: 17rem;
+    border-radius: 25px;
+  }
+}

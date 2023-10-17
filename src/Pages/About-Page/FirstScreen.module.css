@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+
+.heroContainer {
+  background: url(/assets/Photos/cement-texture.jpg) gray;
+  background-size: contain;
+  background-position: center;
+  padding: 4rem 0 4rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+  height: 44rem;
+  box-sizing: border-box;
+}
+.heroContainer img {
+  width: 25rem;
+  transform: rotate(355deg);
+}
+.heroContent {
+  width: 30%;
+}
+
+.heroContent p,
+.heroContent h1 {
+  margin: 0;
+  font-family: "Young Serif", serif;
+  font-weight: normal;
+}
+.heroContent h1 {
+  color: #1d4239;
+}
+.heroContent p {
+  color: #2f6558;
+}
+
+@media (max-width: 767px) {
+  .heroContainer {
+    gap: 5%;
+  }
+  .heroContainer img {
+    width: 13rem;
+  }
+  .heroContainer h1{
+    font-size: 22px;
+  }
+  .heroContainer p {
+    display: none;
+  }
+}

@@ -1,0 +1,105 @@
+.container{
+    padding: 0.6rem;
+    border-top: 1px solid #2F6558;
+    border-bottom: 1px solid #2F6558;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+.buttonContainer{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.menuButton {
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+    color: #2F6558;
+    font-family:"Just Another Hand", cursive;
+    font-size: 35px;
+}
+.active{
+    color: #1D4239;
+    text-decoration: underline;
+}
+
+.menuContainer{
+    background: url(/assets/Photos/cement-texture.jpg) gray;
+    background-position: center;
+    background-size: contain;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 3rem;
+}
+.menuContainer h2{
+margin: 0 auto;
+width: fit-content;
+padding: 15px;
+font-family: "Young Serif", serif;
+color: #2F6558;
+}
+.menuItemsContainer{
+    background-color: #FBFFFE;
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    padding: 50px 30px;
+}
+.menuItem {
+       height: fit-content;
+       flex: 0 0 50%;
+       padding: 12px;
+       box-sizing: border-box;
+  }
+  .menuTop {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #1d4239;
+  }
+  .menuItemName,.menuItemPrice{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+  .dottedLine {
+    border-bottom: 3px dotted #1d4239;
+    width: 50%;
+    flex: 1;
+  }
+  .itemInfo {
+    color: #778899;
+    margin: 0;
+    position: relative;
+    bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+
+  @media (max-width:767px) {
+    .menuButton{
+        font-size: 26px;
+    }
+    .menuContainer{
+        padding: 1rem;
+    }
+    .menuContainer h2 {
+        font-size: 20px;
+    }
+    .menuItemsContainer{
+     padding: 25px 15px;
+     width: 100%;
+     box-sizing: border-box;
+    }
+    .menuItem{
+        flex: auto;
+    }
+   
+    .menuItemName{
+        max-width: 40%;
+    }
+  }

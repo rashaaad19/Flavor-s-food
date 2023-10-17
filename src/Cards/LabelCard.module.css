@@ -1,0 +1,96 @@
+.cardContainerAll {
+  max-width: 32rem;
+  padding: 2rem;
+  height: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 5;
+  box-sizing: border-box;
+}
+.cardContainerAll>:last-child{
+  text-decoration: none;
+}
+.secondScreenContainer {
+  background-color: #e7f1ef;
+  left: 3rem;
+  top: 5rem;
+}
+.secondScreenHeader {
+  color: #1d4239;
+}
+.secondScreenPar {
+  color: #2f6558;
+}
+.sixthScreenContainer {
+  background-color: #255d4f;
+  right: 40px;
+  top: 100px;
+}
+.sixthScreenHeader {
+  color: #fbfffe;
+}
+.sixthScreenPar {
+  color: #e1fbf5;
+}
+.cardContainerBooking{
+  width: 31rem;
+  padding: 1rem;
+  height: 15rem;
+  position: relative;
+  z-index: 5;
+  box-sizing: border-box;
+  background-color: #1d4239;
+  right: 46px;
+  top: 100px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-family: "Young Serif", serif;
+  font-size: 12px;
+}
+.cardContainerBooking p{
+  margin: 0;
+}
+.cardContainerBooking h1{
+  margin: 0;
+  font-weight: initial;
+  color: #fbfffe;
+
+}
+
+/* Media queries for mobile screens */
+@media (max-width: 767px) {
+  .cardContainerAll {
+    padding: 2rem;
+    text-align: center;
+    position: static;
+    height: fit-content;
+    max-width: none;
+    position: static;
+    right: auto;
+    top: auto;
+    margin-top: 1rem;
+  }
+  .cardContainerBooking{
+ max-width: 100%;
+ height: 12rem;
+ position: relative;
+ top: auto;
+ right: auto;
+ font-size: 10px;
+  }
+}
+/*Media queries for tablet screens*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .cardContainerAll {
+    position: relative;
+    padding: 24px;
+    height: fit-content;
+    max-width: 448px;
+  }
+  .sixthScreenContainer{
+    top: 88px;
+    right: 29px;
+  }
+}

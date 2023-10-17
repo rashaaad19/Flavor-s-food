@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
+.backGroundContainer{
+    width: 100%;
+    background: url("/assets/Photos/cement-texture.jpg") gray;
+    background-position: center;
+    background-size: contain;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: #1D4239;
+    width: 85%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.leftPart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.leftPart h2{
+    width: fit-content;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+  
+}
+.leftPart p {
+    width: 70%;
+    margin: 0;
+    text-align: center;
+}
+.rightPart{
+    display: flex;
+    gap: 50px;
+}
+.firstColumn, .secColumn, .thirdColumn{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.firstColumn a, .secColumn a, .thirdColumn a {
+    cursor: pointer;
+    width: fit-content;
+}
+
+
+/*Media Queries for mobile Screens*/
+
+@media (max-width: 767px) {
+.container{
+    display: flex;
+    color: #1D4239;
+    width: 100%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+.leftPart{
+    align-items: normal;
+}
+.rightPart{
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.leftPart p {
+    text-align: start;
+}
+}

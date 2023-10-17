@@ -1,0 +1,26 @@
+.heroContainer {
+  padding: 4rem 2rem 4rem 2rem;
+}
+.hero {
+  background: url(/assets/Photos/MenuHero.jpg) #e1fbf5;
+  background-size: cover;
+  background-position: center;
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-blend-mode: multiply;
+}
+.heroHeaderContainer h1 {
+  font-family: "Young Serif", serif;
+  font-size: 85px;
+  margin: 0;
+
+}
+.heroHeaderContainer h1:first-child {
+  color: #e1fbf5;
+}
+.heroHeaderContainer h1:last-child {
+  color: #fbfffe;
+}

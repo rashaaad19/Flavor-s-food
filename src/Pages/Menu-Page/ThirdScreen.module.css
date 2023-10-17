@@ -1,0 +1,55 @@
+.container h1:first-child {
+  text-align: center;
+  font-family: "Just Another Hand", cursive;
+  color: #1d4239;
+  font-size: 45px;
+  font-weight: normal;
+}
+.specialItemContainer {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  gap: 5%;
+  justify-content: center;
+}
+.specialItemContainer img {
+  width: 30%;
+  border-radius: 10px;
+}
+.specialItemContent {
+  max-width: 35%;
+}
+.specialItemContent div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  width: fit-content;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+}
+.specialItemContent div h2:first-child {
+  color: #2f6558;
+}
+
+.specialItemContent div p:last-child,
+.specialItemContent p:last-child {
+  color: #1d4239;
+}
+@media (max-width: 767px) {
+  .specialItemContainer {
+    flex-direction: column;
+    gap: 0;
+  }
+  .specialItemContainer img {
+    width: 100%;
+  }
+  .specialItemContainer div {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .specialItemContainer img {
+    width: 40%;
+  }
+}

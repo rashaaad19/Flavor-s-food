@@ -1,0 +1,45 @@
+.container {
+  background-color: #f2f6f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+.headerContainer {
+  padding: 1.5rem;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.headerContainer h2 {
+  margin: 0;
+  width: fit-content;
+  font-family: "Just Another Hand", cursive;
+  font-size: 45px;
+  font-weight: normal;
+  color: #2f6558;
+}
+.headerContainer p {
+  max-width: 70%;
+  text-align: center;
+  margin: 0;
+  color: #2f6558;
+}
+.cardsContainer {
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .cardsContainer {
+    flex-direction: column;
+  }
+  .headerContainer{
+    padding: 1rem;
+  }
+}
+@media (min-width:768px) and (max-width:1023px) {
+    .cardsContainer {
+        gap: 10px;
+    }
+}

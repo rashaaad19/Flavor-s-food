@@ -1,0 +1,46 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap");
+
+.container {
+  background: url(/assets/Photos/Booking.jpg) #92a6a1;
+  height: 35rem;
+  background-size: cover;
+  background-position: center;
+  padding: 10px 0 10px 0;
+  background-blend-mode: multiply;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container h1,
+.container p {
+  color: #FBFFFE;
+}
+.container h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+}
+.container p {
+  width: 30%;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+
+/*Media queries for mobile screens*/
+@media (max-width: 767px) {
+  .container{
+    margin-top: 1rem;
+  }
+.container p {
+  width: 100%;
+}
+}
+
+/*media query for tablet screens*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+.container p {
+  width: 70%;
+}
+}

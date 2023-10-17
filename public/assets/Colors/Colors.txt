@@ -1,0 +1,9 @@
+Dark Green (headers+button background+menu button ) : #1D4239
+Light Green (Paragraphs+headers ) : #2F6558
+White-Green (button text - Menu hero header) : #E1FBF5
+White-Green* (Screen bacgkround) : #f2f6f5;
+White-Green* (Card background) : #E7F1EF
+Gray (Small text + disabled buttons ) : #778899
+Dark Green * (Card Background) : #255D4F 
+White (Button Background + card text) : #FBFFFE
+Creamy White (image text) : #FDF5E6

@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.container p {
+    max-width: 90%;
+    margin: 0;
+  color: #2F6558;
+}
+.container h2 {
+  margin: 10px;
+  font-family: "Young Serif", serif;
+  font-weight: normal;
+  color: #2F6558;
+  font-size: 22px;
+}
+@media (max-width:767px) {
+    .container{
+        padding: 10px 0 10px 0;
+    }
+    .container img{
+        width: 17rem;
+    }
+}
+
+@media (min-width:768px) and (max-width:1023px) {
+    .container img{
+        width: 15rem;
+    }
+    .container h2{
+        font-size: 20px;
+        width: 100%;
+    }
+    .container p {
+        max-width: fit-content;
+    }
+}

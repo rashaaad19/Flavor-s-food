@@ -1,0 +1,25 @@
+.container{
+    background-color: #f2f6f5;
+    display: flex;
+    position: relative;
+    padding: 3rem;
+    justify-content: center;
+    height: 48rem;
+}
+.container img{
+    max-width: 50%;
+}
+@media (max-width:767px) {
+    .container{
+        padding: 0;
+        flex-direction: column-reverse;
+        height: fit-content;
+    }
+    .container img{
+        max-width: 100%;
+    }
+}
+/* @media (min-width:767px) and (max-width:1023px) {
+    .container img{
+    }
+} */

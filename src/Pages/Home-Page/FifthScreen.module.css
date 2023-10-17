@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap");
+
+.container {
+  background-image: url("/assets/Photos/cement-texture.jpg");
+  background-size: contain;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+.container h1 {
+  font-family: "Just Another Hand", cursive;
+  font-size: 34;
+  color: #1d4239;
+  font-weight: 200;
+}
+
+/*media queries for small to large laptop screens*/
+
+@media (min-width: 1024px) and (max-width: 1600px) {
+  .btnContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 25px;
+  }
+  .menuContainer {
+    width: 50%;
+    margin: 2rem 0 2rem 0;
+  }
+  .menuItem {
+    width: 100%;
+    margin: 10px 0 10px 0;
+    height: fit-content;
+  }
+  .menuTop {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #1d4239;
+  }
+  .dottedLine {
+    border-bottom: 3px dotted #1d4239;
+    width: 50%;
+    flex: 1;
+  }
+  .itemInfo {
+    color: #778899;
+    margin: 0;
+    position: relative;
+    bottom: 10px;
+  }
+
+}
+
+/*Media queries for mobile screens*/
+@media (max-width: 767px) {
+  .btnContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+  .menuTop {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #1d4239;
+  }
+  .dottedLine {
+    border-bottom: 3px dotted #1d4239;
+    width: 50%;
+    flex: 1;
+  }
+  .itemInfo {
+    color: #778899;
+    margin: 0;
+    position: relative;
+    bottom: 10px;
+  }
+}
+
+/*media query for tablet screens*/
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  .btnContainer {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+  }
+  .menuTop {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #1d4239;
+  }
+  .dottedLine {
+    border-bottom: 3px dotted #1d4239;
+    width: 50%;
+    flex: 1;
+  }
+  .itemInfo {
+    color: #778899;
+    margin: 0;
+    position: relative;
+    bottom: 10px;
+  }
+
+}

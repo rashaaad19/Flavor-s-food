@@ -1,0 +1,80 @@
+.container{
+    background-color: #255D4F;
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+}
+.container p {
+    color: #FBFFFE;
+}
+.container> :last-child{
+  display: block;
+  width: fit-content;
+  text-decoration: none;
+}
+.header{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+}
+.par{
+font-size: 15px;
+}
+
+.whiteAnchor {
+    background-color: #fbfffe;
+    padding: 5px;
+    width: 6rem;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: all 0.4s;
+    color: #1d4239;
+    border: none;
+    font-size: 16px; 
+    text-align: center;
+    display: block;
+  }
+  
+  .whiteAnchor:hover {
+    background-color: #fbfffed0;
+  } 
+  
+  
+ .anchor {
+  background-color: #fbfffe;
+  padding: 5px;
+  width: 6rem;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.4s;
+  color: #1d4239;
+  border: none;
+  font-size: 16px; 
+  text-align: center;
+  display: block;
+  display: block;
+}
+
+.anchor:hover {
+  background-color: #fbfffed0;
+} 
+
+
+/*   Mobile Screen */
+@media(max-width:599px){
+  .container{
+    background-color: #255D4F;
+    width: 100%;
+    padding: 8px;
+    height: 12rem;
+  }
+
+}
+/* Tablet Screen */
+@media (min-width: 600px) and (max-width: 768px) {
+
+  .container{
+    width: 100%;
+  }
+}
+  

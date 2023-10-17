@@ -1,0 +1,20 @@
+.container{
+    display: flex;
+    margin: 1rem 0 6rem 0;
+    padding: 15px;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+/*Media Queries for mobile Screens*/
+
+@media (max-width: 767px) {
+.container{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    flex-direction: column;
+    gap: 15px;
+}
+}

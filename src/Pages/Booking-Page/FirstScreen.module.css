@@ -1,0 +1,125 @@
+.container {
+  background: url(/assets/Photos/cement-texture.jpg) gray;
+  background-size: contain;
+  background-position: center;
+  padding: 4rem 0.5rem;
+  text-align: center;
+}
+.container h1 {
+  font-family: "Young Serif", serif;
+  color: #2f6558;
+}
+.container p {
+  max-width: 50%;
+  margin: auto;
+  color: #1d4239;
+}
+.formContainer {
+  margin: auto;
+}
+.formContainer ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: [first] 1fr [second] 1fr [third] 1fr;
+  grid-template-rows: 1fr 1fr 4fr;
+  margin: 2rem auto;
+  gap: 15px;
+  max-width: 50rem;
+  background-color: whitesmoke;
+  padding: 2rem 3rem;
+  justify-items: center;
+  box-sizing: border-box;
+  border: 1px solid gray;
+  transition: box-shadow 0.2s ease-in-out;
+}
+.formContainer ul:hover {
+    box-shadow: 0px 0px 10px 2px #1d4239;
+  }
+  
+.formItem {
+  position: relative;
+  width: 100%;
+  padding: 4px;
+  box-sizing: border-box;
+  margin: 5px 0;
+}
+.formItem label {
+  position: absolute;
+  left: 0px;
+  bottom: 100%;
+}
+.formItem input {
+  width: 100%;
+  padding-left: 0px;
+  outline: none;
+  box-sizing: border-box;
+  padding: 10px;
+}
+/*selecting each label item that comes before and input but only when the input is valid or on focus*/
+
+/* .formItem input:valid + label,
+.formItem input:focus + label {
+  visibility: hidden;
+} */
+.formItem input:focus:invalid{
+border: 1px solid red;
+}
+.formItem input:focus:valid{
+  border: 1px solid green;
+}
+
+.textContainer {
+  display: block;
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: span 3;
+  outline: none;
+  width: 100%;
+  padding: 4px;
+  box-sizing: border-box;
+  height: 11rem;
+}
+.textArea {
+  outline: none;
+}
+.submitContainer {
+  justify-self: self-start;
+  padding: 4px;
+}
+.submitContainer button {
+  display: inline-block;
+  padding: 10px;
+  background-color: #1d4239;
+  color: #e1fbf5;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+/*media queries for mobile screens*/
+
+@media (max-width: 767px) {
+  .container p {
+    width: 100%;
+  }
+  .formContainer ul {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    padding: 1rem;
+    width: 80%;
+  }
+  .textContainer {
+    grid-column-end: auto;
+  }
+  .formItem {
+    position: relative;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    margin: 10px 0px;
+  }
+}
