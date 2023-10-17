@@ -4,6 +4,7 @@
   background-position: center;
   padding: 4rem 0.5rem;
   text-align: center;
+  height: 50rem;
 }
 .container h1 {
   font-family: "Young Serif", serif;
@@ -11,8 +12,9 @@
 }
 .container p {
   max-width: 50%;
-  margin: auto;
+  margin: 0 auto 5rem auto;
   color: #1d4239;
+
 }
 .formContainer {
   margin: auto;
@@ -64,8 +66,8 @@
 .formItem input:focus:invalid{
 border: 1px solid red;
 }
-.formItem input:focus:valid{
-  border: 1px solid green;
+.formItem input:valid, .formItem input:focus:valid{
+  border: 1.5px solid green;
 }
 
 .textContainer {
