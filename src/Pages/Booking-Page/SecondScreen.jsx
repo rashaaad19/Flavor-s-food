@@ -19,7 +19,7 @@ const SecondScreen = () => {
     <>
       <div className={classes.container} ref={ref}>
         <motion.img
-          src="/assets/Photos/BookingStaff.jpg"
+          src="./src/assets/BookingStaff.jpg"
           alt="staff"
           initial={{ opacity: 0 }}
           animate={inView && { opacity: 1 }}
