@@ -3,7 +3,6 @@
   "private": false,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://rashaaad19.github.io/Flavor-s-food/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
