@@ -2,8 +2,6 @@ import ImageCard from "../../Cards/ImageCard";
 import LabelCard from "../../Cards/LabelCard";
 import classes from "./SixthScreen.module.css";
 
-
-
 function SixthScreen() {
   return (
     <>
@@ -22,7 +20,7 @@ function SixthScreen() {
             "cardContainerAll",
             "sixthScreenContainer",
             "sixthScreenHeader",
-            "sixthScreenPar"
+            "sixthScreenPar",
           ]}
           showButton={true}
           path="About-Us"
@@ -30,8 +28,6 @@ function SixthScreen() {
           data="At Flavor's, we are more than just a restaurant; we are a passionate team of culinary artists dedicated to creating unforgettable dining experiences. Our journey began with a shared love for food and a vision to bring exceptional flavors to the heart of our community"
         />
       </div>
-
-
     </>
   );
 }

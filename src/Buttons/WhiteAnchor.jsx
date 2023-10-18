@@ -11,10 +11,10 @@ function WhiteAnchor(props) {
   }
   return (
     <>
-    <div className={classes.container}>
-=      <Link to={`${props.path}`}>
-        <a className={combinedClassNames}>{props.title}</a>
-      </Link>
+      <div className={classes.container}>
+        <Link to={`${props.path}`}>
+          <a className={combinedClassNames}>{props.title}</a>
+        </Link>
       </div>
     </>
   );
